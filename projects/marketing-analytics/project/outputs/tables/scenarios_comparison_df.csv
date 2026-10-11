@@ -1,0 +1,13 @@
+Scenario,Budget,Incremental Revenue,Uplift,ROI
+Scenario 1 - Equal Allocation,10852749.75,11577234.0,1038910.0,1.067
+Scenario 1 - mROI Allocation,10852749.75,11545538.0,858234.0,1.0631
+Scenario 1 - Saturated Channels Allocation,10852749.75,12945485.0,85873.0,1.1931
+Scenario 2 - Equal Allocation,9813571.81,11063965.0,1007880.0,1.1274
+Scenario 2 - mROI Allocation,9813571.81,11058465.0,842233.0,1.1269
+Scenario 2 - Saturated Channels Allocation,9813571.81,12409667.0,88557.0,1.2646
+Scenario 3 - Equal Allocation,7403156.73,9677276.0,926992.0,1.3067
+Scenario 3 - mROI Allocation,7403156.73,9728026.0,779867.0,1.3142
+Scenario 3 - Saturated Channels Allocation,7403156.73,10910977.0,93650.0,1.4741
+Scenario 4 - Equal Allocation,9708510.59,11009082.0,1004239.0,1.1339
+Scenario 4 - mROI Allocation,9708510.59,11007695.0,840442.0,1.1339
+Scenario 4 - Saturated Channels Allocation,9708510.59,12351705.0,88136.0,1.2725

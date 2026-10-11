@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@6"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@6.4.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@7"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeOpacity": 0}, "axis": {"labelColor": "#5F6368", "labelFont": "Roboto", "labelFontSize": 12, "titleColor": "#5F6368", "titleFont": "Roboto", "titleFontSize": 12, "titleFontWeight": "normal", "titlePadding": 10}, "header": {"labelAlign": "right", "labelAngle": -45, "labelBaseline": "middle", "labelOrient": "bottom", "title": null}}, "data": {"name": "data-08101ce9f486faf7e21ca25c18f0b2ab"}, "facet": {"column": {"field": "channel", "type": "nominal"}}, "spec": {"layer": [{"mark": {"type": "bar", "cornerRadiusEnd": 2, "tooltip": true}, "encoding": {"color": {"field": "label", "legend": {"columnPadding": 20, "orient": "bottom", "rowPadding": 10, "title": null}, "scale": {"domain": ["% Revenue", "% Spend", "Return on Investment"], "range": ["#669DF6", "#AECBFA", "#188038"]}, "type": "nominal"}, "tooltip": [{"field": "pct", "format": ".1%", "type": "quantitative"}], "x": {"axis": {"labels": false, "ticks": false, "title": null}, "field": "label", "scale": {"paddingOuter": 0.5}, "type": "nominal"}, "y": {"axis": {"format": "%", "tickCount": 2, "titleAlign": "left", "titleAngle": 0, "titleY": -20}, "field": "pct", "type": "quantitative"}}}, {"mark": {"type": "tick", "color": "#188038", "cornerRadius": 2, "size": 20, "thickness": 4, "tooltip": true}, "encoding": {"tooltip": [{"field": "roi", "format": ".2f", "type": "quantitative"}], "y": {"field": "roi_scaled", "title": "%", "type": "quantitative"}}}, {"mark": {"type": "text", "color": "#202124", "dy": -15, "fontSize": 12}, "encoding": {"text": {"field": "roi", "format": ".1f", "type": "quantitative"}, "y": {"field": "roi_scaled", "type": "quantitative"}}}]}, "spacing": -1, "title": {"text": "Spend and revenue contribution by marketing channel", "anchor": "start", "color": "#3C4043", "font": "Google Sans Display", "fontSize": 18, "fontWeight": "normal", "offset": 10}, "$schema": "https://vega.github.io/schema/vega-lite/v6.4.1.json", "datasets": {"data-08101ce9f486faf7e21ca25c18f0b2ab": [{"channel": "GOOGLE_PAID_SEARCH", "pct": 0.2372138500213623, "label": "% Revenue", "roi": 1.7981771230697632, "roi_scaled": 0.5432643890380859}, {"channel": "GOOGLE_SHOPPING", "pct": 0.028435030952095985, "label": "% Revenue", "roi": 1.7187236547470093, "roi_scaled": 0.5192599892616272}, {"channel": "GOOGLE_PMAX", "pct": 0.17429710924625397, "label": "% Revenue", "roi": 1.5919861793518066, "roi_scaled": 0.4809701144695282}, {"channel": "GOOGLE_VIDEO", "pct": 0.027883410453796387, "label": "% Revenue", "roi": 1.0437136888504028, "roi_scaled": 0.3153262734413147}, {"channel": "META_FACEBOOK", "pct": 0.442516565322876, "label": "% Revenue", "roi": 1.0508792400360107, "roi_scaled": 0.3174911439418793}, {"channel": "META_INSTAGRAM", "pct": 0.027365373447537422, "label": "% Revenue", "roi": 1.3066529035568237, "roi_scaled": 0.39476534724235535}, {"channel": "TIKTOK", "pct": 0.062289368361234665, "label": "% Revenue", "roi": 1.286572813987732, "roi_scaled": 0.3886987566947937}, {"channel": "GOOGLE_PAID_SEARCH", "pct": 0.17019392549991608, "label": "% Spend", "roi": 1.7981771230697632, "roi_scaled": 0.5432643890380859}, {"channel": "GOOGLE_SHOPPING", "pct": 0.021344386041164398, "label": "% Spend", "roi": 1.7187236547470093, "roi_scaled": 0.5192599892616272}, {"channel": "GOOGLE_PMAX", "pct": 0.14124922454357147, "label": "% Spend", "roi": 1.5919861793518066, "roi_scaled": 0.4809701144695282}, {"channel": "GOOGLE_VIDEO", "pct": 0.03446666896343231, "label": "% Spend", "roi": 1.0437136888504028, "roi_scaled": 0.3153262734413147}, {"channel": "META_FACEBOOK", "pct": 0.5432643890380859, "label": "% Spend", "roi": 1.0508792400360107, "roi_scaled": 0.3174911439418793}, {"channel": "META_INSTAGRAM", "pct": 0.027019508183002472, "label": "% Spend", "roi": 1.3066529035568237, "roi_scaled": 0.39476534724235535}, {"channel": "TIKTOK", "pct": 0.062461841851472855, "label": "% Spend", "roi": 1.286572813987732, "roi_scaled": 0.3886987566947937}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
