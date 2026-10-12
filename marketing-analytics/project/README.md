@@ -1,17 +1,9 @@
-# Project Marketing Analytics 2026
-## Marketing Mix Modelling with Meridian and SHAP Explainability
+## Marketing Analytics Homework Project
+Marketing Mix Modelling with Meridian and SHAP Explainability
 
 ---
 
-**Author:** *Matteo Fumagalli*  
-**Student ID:** *894468*  
-**University:** *University of Milano-Bicocca*  
-**Degree Program:** *Master’s Degree in Data Science*   
-**Academic Year:** *2025/2026*
-
----
-
-## Project Description
+### :bar_chart: Project Description
 1. Exploratory Data Analysis
 2. Data Preparation
 3. Meridian MMM Development
@@ -21,12 +13,12 @@
 
 ---
 
-## Dataset
+### :information_source: Dataset
 The dataset used in this project is the [Multi-Region Marketing Mix Modelling (MMM) Dataset for Several eCommerce Brands by Anthony Anderson (2024)](https://doi.org/10.6084/m9.figshare.25314841.v3). Please refer to the original source to access the data and its documentation.
 
 ---
 
-## Repository Structure 
+### :file_folder: Repository Structure 
 - `notebooks/`: orchestration pipeline for running the analysis and displaying outputs
 - `outputs/`: visualizations, Meridian model, presentation, and tables
 - `src/`: source code for each part of the project
@@ -34,7 +26,7 @@ The dataset used in this project is the [Multi-Region Marketing Mix Modelling (M
 
 ---
 
-## Learning Objectives
+### :dart: Objectives
 - Prepare Marketing Mix Modelling datasets.
 - Engineer media and control variables.
 - Train a Meridian MMM model.
@@ -46,7 +38,7 @@ The dataset used in this project is the [Multi-Region Marketing Mix Modelling (M
 
 --- 
 
-## External Sources
+### :link: External Sources
 - [Multi-Region Marketing Mix Modelling (MMM) Dataset for Several eCommerce Brands](https://doi.org/10.6084/m9.figshare.25314841.v3)
 - [Introduction to Meridian Demo](https://developers.google.com/meridian/notebook/meridian-getting-started)
 - [Holdout observations (train and test split)](https://developers.google.com/meridian/docs/advanced-modeling/holdout-observations)

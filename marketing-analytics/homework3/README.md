@@ -1,17 +1,9 @@
-# HW 3 Marketing Analytics 2026 - Spark API
-## Customer Churn Prediction
+## Marketing Analytics Homework 3
+Customer Churn Prediction - Spark API
 
 ---
 
-**Author:** *Matteo Fumagalli*  
-**Student ID:** *894468*  
-**University:** *University of Milano-Bicocca*  
-**Degree Program:** *Master’s Degree in Data Science*   
-**Academic Year:** *2025/2026*
-
----
-
-## Project Description
+### :bar_chart: Project Description
 1. Load datasets
 2. Dataset overview
 3. Split features and target
@@ -30,12 +22,12 @@
 
 ---
 
-## Dataset
+### :information_source: Dataset
 The dataset used in this project was provided for academic purposes and is not included in this repository. 
 
 ---
 
-## Repository Structure 
+### :file_folder: Repository Structure 
 - `visualizations/`:  feature importance plots, ROC curve, Precision-Recall curve
 - `environment.yml`:  reproducible Python environment
 - `HW3_code.py`: complete pipeline
@@ -43,7 +35,7 @@ The dataset used in this project was provided for academic purposes and is not i
 
 ---
 
-## Learning Objectives
+### :dart: Objectives
 - Load and inspect tabular datasets with Spark API
 - Verify different datasets and define accordingly which training models to use with Spark API
 - Define train and test dataset
@@ -58,7 +50,7 @@ The dataset used in this project was provided for academic purposes and is not i
 
 ---
 
-## Example Execution
+### :arrow_forward: Example Execution
 
 ```bash
 python HW3_code.py
@@ -66,7 +58,7 @@ python HW3_code.py
 
 ---
 
-## External Sources
+### :link: External Sources
 - [Installation guide for PySpark](https://spark.apache.org/docs/latest/api/python/getting_started/install.html)
 - [Machine Learning Library (MLlib) Guide](https://spark.apache.org/docs/4.1.2/ml-guide.html)
 - [Manual ROC/Precision-Recall curve (Kaggle)](https://www.kaggle.com/code/himelsarder/manual-roc-auc-approach-without-using-sklearn)
